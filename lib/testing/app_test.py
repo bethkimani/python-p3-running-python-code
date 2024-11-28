@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+#!/usr/bin/env python3
+
+
+
 from os import path
 import runpy
 import io
@@ -30,3 +34,8 @@ class TestAppPy:
         runpy.run_path("lib/app.py")
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Hello World! Pass this test, please.\n")
+
+
+print("Hello World! Pass this test, please.")
+
+        
